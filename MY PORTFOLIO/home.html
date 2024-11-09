@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicente Homepage</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+   <!-- Header -->
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Everything happens for a reason</p>
+        </div>
+    </section>
+    <hr>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Ralph Benedict Yambao Vicente, a passionate Front-End Web Developer with a keen eye for design and a focus on creating seamless, interactive user experiences. I specialize in HTML, CSS, and JavaScript, and I love turning creative concepts into responsive, functional websites. With a strong understanding of modern web technologies and an enthusiasm for clean, efficient code, I aim to craft websites that are not only visually appealing but also user-friendly and accessible. I'm constantly learning new techniques and tools to stay on top of the latest trends in front-end development, and I’m excited to continue pushing the boundaries of what’s possible on the web.
+
+                My journey in web development started out as a hobby, and over time it grew into a profession that I am deeply passionate about. From experimenting with the visual design of websites to enhancing their interactivity, every project is an opportunity to learn something new. I find inspiration in solving problems through code and finding elegant solutions that improve the user experience.
+
+                Whether it's working on personal projects or collaborating with clients, my goal is always to create a product that is both functional and aesthetically pleasing. I am constantly seeking ways to improve my skills and learn new tools, and I look forward to expanding my knowledge further as I continue my development journey.
+            </p>
+        </div>
+    </section>
+
+   <!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="content">
+        <h2>My Personal Projects</h2>
+        <br>
+        <div class="gallery-items">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <a href="project1.html">
+                    <img src="rawr.png" alt="Project 1">
+                </a>
+                <h3>Reliable Auto Workshop Revolution</h3>
+                <p>Finished developing 2/2/2024</p>
+                <!-- Hidden details box -->
+                <div class="image-details">
+                    <button class="close-btn">&times;</button>
+                    <h3>Project 1 Details</h3>
+                    <p>This project features a fully responsive website for a mechanic workshop. Designed to help auto repair shops attract new clients and manage appointments online, the website includes features such as a booking system, service descriptions, team member profiles, and contact forms. The goal is to make it easy for customers to schedule repairs or consultations with just a few clicks, all while providing a seamless and professional user experience.</p>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <a href="project2.html">
+                    <img src="motomaster.png" alt="Project 2">
+                </a>
+                <h3>MotoMaster</h3>
+                <p>Finished developing 8/2/2022</p>
+                <!-- Hidden details box -->
+                <div class="image-details">
+                    <button class="close-btn">&times;</button>
+                    <h3>Project 2 Details</h3>
+                    <p>MotoMaster is a mobile app tailored for motor enthusiasts, combining both entertainment and functionality. The app offers a variety of features, including trivia quizzes to test users' knowledge, a marketplace for buying and selling motor-related products, and much more. With its clean, engaging design, MotoMaster aims to connect motor enthusiasts with a community of like-minded individuals, while also offering practical tools for the motor industry.</p>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <a href="project3.html">
+                    <img src="financial.png" alt="Project 3">
+                </a>
+                <h3>Financial Life App</h3>
+                <p class="date">Finished developing 6/12/2022</p>
+                <!-- Hidden details box -->
+                <div class="image-details">
+                    <button class="close-btn">&times;</button>
+                    <h3>Project 3 Details</h3>
+                    <p>The Financial Life App is a powerful tool for managing investments in stocks and cryptocurrencies. Designed with real-time tracking, portfolio management, and market analysis, the app helps users stay updated on their investments and make informed decisions. Whether you’re a seasoned investor or new to trading, this app provides the tools needed to monitor your financial portfolio and navigate the ever-changing landscape of stocks and crypto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="content">
+        <h2>Contact Me</h2><br>
+        <div class="contact-info">
+            <img src="pic.png" alt="Your Picture" class="profile-img">
+            <div class="contact-details">
+                <p>Email: <a href="mailto:vicente2221464@mkt.ceu.edu.ph">vicente2221464@mkt.ceu.edu.ph</a></p>
+                <p>Phone: <a href="tel:+9563112474">+9563112474</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">your LinkedIn</a></p>
+                <p>GitHub: <a href="https://github.com/yourprofile" target="_blank">your GitHub</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+<!-- Footer -->
+<footer>
+    <p>&copy; <span id="copyright-year"></span> RVzyz 2024. All rights reserved.</p>
+</footer>
+
+<script>
+    // Automatically update the copyright year
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+
+    const closeButton = document.querySelector('.close-btn');
+    const imageDetails = document.querySelector('.image-details');
+
+    // Add click event to the close button to hide the details
+    closeButton.addEventListener('click', () => {
+        imageDetails.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
