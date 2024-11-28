@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: left;
+    background: #000000;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 40px; /* Adjust size as necessary */
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background: #1a1a1a;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.section {
+    padding: 2rem 1rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.alternate {
+    background: #333333;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.row img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.row .description {
+    max-width: 50%;
+    padding: 1rem;
+}
+
+.description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.description p {
+    font-size: 1.2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    background: #1a1a1a;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Logo and title alignment */
+header .logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 40px; /* Adjust the logo size */
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
